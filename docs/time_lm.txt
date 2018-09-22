@@ -1,0 +1,25 @@
+
+Call:
+lm(formula = total_time ~ work_time, data = repair_process_mining_df)
+
+Residuals:
+       Min         1Q     Median         3Q 
+-476530137 -288186879 -125128519  232346924 
+       Max 
+1094362527 
+
+Coefficients:
+             Estimate Std. Error t value
+(Intercept) 3.108e+08  5.255e+06   59.15
+work_time   3.981e+00  1.757e-01   22.66
+            Pr(>|t|)    
+(Intercept)   <2e-16 ***
+work_time     <2e-16 ***
+---
+Signif. codes:    0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05
+  ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+Residual standard error: 347200000 on 9629 degrees of freedom
+Multiple R-squared:  0.05063,	Adjusted R-squared:  0.05053 
+F-statistic: 513.5 on 1 and 9629 DF,  p-value: < 2.2e-16
+
