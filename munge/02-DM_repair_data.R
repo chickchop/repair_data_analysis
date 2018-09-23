@@ -51,8 +51,8 @@ repair_attribute_df <- left_join(repair_attribute_df,tmp_5, by = "caseID")
 rm(tmp_1,tmp_2,tmp_3,tmp_4,tmp_5)
 
 
-################ process mining data set ####################
-repair_process_mining_df <- left_join(repair_process_df,repair_attribute_df, by="caseID")
+################ process mining data set 1 (pro-discovery) ####################
+repair_process_mining_df_1 <- left_join(repair_process_df,repair_attribute_df, by="caseID")
 
 
 ################ export data ################
