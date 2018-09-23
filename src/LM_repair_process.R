@@ -48,8 +48,8 @@ cor.test(total_time,lead_time)
 detach()
 
 ########### total time by pattern boxplot 
-ggplot(repair_attribute_df_, aes(x = process_pattern, y = total_time)) + 
-    geom_boxplot(outlier.color = "red", fill = "grey") + 
+ggplot(repair_attribute_df_) + 
+    geom_boxplot(aes(x = process_pattern, y = total_time), outlier.color = "red", fill = "grey") + 
     stat_summary(fun.y = mean, geom = "point", size = 1)
     # theme(axis.text.x = element_text(angle = 60, hjust = 1, vjust = 0.5))
 
